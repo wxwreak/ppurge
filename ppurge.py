@@ -15,7 +15,7 @@ def run_cmd(cmd):
     subprocess.run(cmd, shell=True, check=True)
 
 def refresh():
-    url = "https://raw.githubusercontent.com/wreakdev/ppurge/refs/heads/main/ppurge.py"
+    url = "https://raw.githubusercontent.com/wxwreak/ppurge/refs/heads/main/ppurge.py"
     resp = r.get(url)
     if resp.status_code == 200:
         with open("ppurge.py", "wb") as f:
